@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина  Дрантусова](https://up.htmlacademy.ru/htmlcss/32/user/1890517).
-* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
+* Наставник: `Неизвестно`.
 
 ---
 
