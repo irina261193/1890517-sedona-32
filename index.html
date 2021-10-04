@@ -8,18 +8,26 @@
     <header class="navigation-list">
       <nav>
         <ul class="main-navigation">
-          <li class="main-navigation-item">Главная</li>
-          <li class="main-navigation-item">О Седоне</li>
-          <li class="main-navigation-item">Гостиницы</li>
-          <li class="main-navigation-item">Html Academy</li>
+          <li class="main-navigation-item">
+            <a class="navigation-link">Главная</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="navigation-link">О Седоне</a>/
+          </li>
+          <li class="main-navigation-item">
+            <a class="navigation-link">Гостиницы</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="navigation-link">Html Academy</a>
+          </li>
         </ul>
         <button class="search-button"></button>
         <button class="share-button"></button>
         <button type="button">Хочу сюда!</button>
       </nav>
     </header>
-    <main>
-      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+    <main class="main-index">
+      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
       <br>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
       <section>
@@ -51,7 +59,7 @@
         <button>Поиск гостиницы в Седоне</button>
       </section>
       <section>
-        <h2>Подпишитесь на рассылку</h2>
+        <h2 class="mail-distribution">Подпишитесь на рассылку</h2>
         <form class="textarea" name="e-mail" method="post">
           <input type="email" placeholder="Ваш e-mail"></input>
           <button>Подписаться</button>
@@ -64,8 +72,8 @@
         <li>Фейсбук</li>
         <li>YouTube</li>
       </ul>
-      <address>+7 (812) 812-12-12</address>
-      <span></span>
+      <a class="contacts-phone" href="+7(812)812-12-12">+7 (812) 812-12-12</a>
+      <span class="label-icon"></span>
     </footer>
   </body>
 </html>
