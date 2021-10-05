@@ -9,25 +9,40 @@
       <nav>
         <ul class="main-navigation">
           <li class="main-navigation-item">
-            <a class="navigation-link">Главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="main-navigation-item">
-            <a class="navigation-link">О Седоне</a>/
+            <a class="navigation-link" href="about.html">О Седоне</a>/
           </li>
           <li class="main-navigation-item">
-            <a class="navigation-link">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
           <li class="main-navigation-item">
-            <a class="navigation-link">Html Academy</a>
+            <a class="navigation-link" href="#">Html Academy</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link">
+              <span class="visually-hiden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="visually-hiden">
+                Поделиться
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link">Хочу сюда</a>
           </li>
         </ul>
-        <button class="search-button"></button>
-        <button class="share-button"></button>
-        <button type="button">Хочу сюда!</button>
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+      <h1 class="visually-hiden">Sedona</h1>
+      <p>Седона - небольшой городок в Аризоне, заслуживающий большего</p>
       <br>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон</p>
       <section>
@@ -60,20 +75,36 @@
       </section>
       <section>
         <h2 class="mail-distribution">Подпишитесь на рассылку</h2>
-        <form class="textarea" name="e-mail" method="post">
-          <input type="email" placeholder="Ваш e-mail"></input>
+        <form class="e-mail-form" name="e-mail" method="post">
+          <input class="field" type="email" name="e-mail" placeholder="Ваш e-mail" id="mail-distribution"></input>
           <button>Подписаться</button>
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
+      <section class="footer-social">
       <ul class="social-net">
-        <li>Вконтакте</li>
-        <li>Фейсбук</li>
-        <li>YouTube</li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.vk.com/">
+          Вконтакте
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.facebook.com/">
+          Фейсбук
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/">
+          YouTube
+          </a>
+        </li>
       </ul>
+    </section>
+    <section>
       <a class="contacts-phone" href="+7(812)812-12-12">+7 (812) 812-12-12</a>
-      <span class="label-icon"></span>
+      <img class="htmml-academy-logo" src="" alt="Логотип HTML Academy"></img>
+    </section>
     </footer>
   </body>
 </html>
