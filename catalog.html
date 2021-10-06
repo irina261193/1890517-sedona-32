@@ -68,9 +68,18 @@
             <button class="range-toggle-button toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену</span>
             </button>
+            <label class="catalog-filter-label">
+              от <input class="catalog-filter-input" type="number" name="min-price"> 0
+            </label>
+            <button class="range-toggle-button toggle-min" type="button">
+              <span class="visually-hidden">Изменить максимальную цену</span>
+            </button>
+            <label class="catalog-filter-label">
+              до <input class="catalog-filter-input" type="number" name="max-price"> 9000
+            </label>
         </section>
         <section class="value">
-          <h5>Стоимость,<span>р.</span></h5>
+          <h5>Стоимость,&#8381;</h5>
           <form class="value-filter" action="http://htmlacademy.ru" method="POST"></form>
           <button type="button" name="применить">Применить</button>
           <a type="link">Сбросить</a>
