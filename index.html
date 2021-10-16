@@ -84,8 +84,23 @@
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p>&mdash;№3&mdash;</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>&mdash;№4&mdash;</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>&mdash;№5&mdash;</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
         </ol>
-      <section class="interested">
+      <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button>
@@ -94,11 +109,11 @@
       </section>
       <section>
         <h2 class="mail-distribution">Подпишитесь на рассылку</h2>
-        <br>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="e-mail-form" name="e-mail" method="post">
-          <input class="field" type="email" name="e-mail" placeholder="Ваш e-mail" id="mail-distribution"></input>
-          <button type="button" name="subscribe" id="subscribe">Подписаться</button>
+        <form class="e-mail-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden">
+            <input class="field" type="email" name="e-mail" placeholder="Ваш e-mail" id="mail-distribution"></input>
+            <button class="button" type="submit" name="subscribe" id="subscribe">Подписаться</button>
         </form>
       </section>
     </main>
@@ -121,13 +136,8 @@
         </a>
       </li>
     </ul>
-    <h1 class="visually-hidden" hidden>Контакты</h1>
-    <address>
-      <a class="contacts-phone" href="tel:+7812812-12-12">+7 (812) 812-12-12</a>
-      <span class="html-academy-logo">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a>
-      </span>
-    </address>
+    <p class="contacts-phone">+7 (812) 812-12-12</p>
+    <p>https://htmlacademy.ru/</p>
     </footer>
   </body>
 </html>
