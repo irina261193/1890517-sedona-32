@@ -10,25 +10,31 @@
         <nav class="main-navigation">
           <ul class="navigation-list">
             <li class="main-navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <button>
+                <a href="index.html" class="navigation-link" type="link">Главная</a>
+              </button>
             </li>
             <li class="main-navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
+              <button>
+                <a href="about.html" class="navigation-link" type="link">О Седоне</a>
+              </button>
             </li>
             <li>
-              <a class="navigation-link" href="catalog.html" current>Гостиницы</a>
+              <button>
+                <a class="navigation-link" type="link" current>Гостиницы</a>
+              </button>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="user-navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link">
                 <span class="visually-hidden">  
                   Поиск
                 </span>
               </a>
             </li>
             <li class="user-navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link">
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -37,7 +43,7 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="main-navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+              <a href="#" class="navigation-link">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -93,7 +99,7 @@
                 <span class="visually-hidden">Изменить минимальную цену</span>
               </button>
             <label class="catalog-filter-label">
-              от <input for="catalog-filter-label" class="catalog-filter-input" type="number" name="min-price"> 0
+              от <input form="catalog-filter-label" class="catalog-filter-input" type="number" name="min-price"> 0
             </label>
             <button class="range-toggle-button toggle-min" type="button">
               <span class="visually-hidden">Изменить максимальную цену</span>
@@ -110,10 +116,10 @@
         </section>
           <form class="value-filter" action="http://htmlacademy.ru" method="POST"></form>
           <form class="sorting-type">
-            <label class="visually-hidden" for="sorting">Сортировка гостиниц/label>
+            <label class="visually-hidden" for="sorting">Сортировка гостиниц</label>
             <select class="select-control" id="sorting" name="sorting">
               <option value="cheap" selected>Сначала дешевые</option>
-              <option value="expensive" unselected>Сначала дорогие</option>
+              <option value="expensive" disabled>Сначала дорогие</option>
             </select>
             <button type="menu">
               <span class="visually-hidden">Меню</span>
@@ -131,44 +137,46 @@
             <li class="hotel-amara-resort-and-spa">
               <span>
                 <img src="img/hotel-1.png" alt="Amara Resort & Spa" width="180" height="120">
+              </span>
                 <h3>Amara Resort &amp; Spa</h3>
                 <p class="hotel">Гостиница</p>
                 <p class="hotel-price">От 4000 &#8381;</p>
-              </span>
-              <a class="link" href="#">Подробнее</a>
+              <a href="#" class="link">Подробнее</a>
               <button type="button">В избранное</button>
-              <p>Рейтинг:<span type="ratio">8,5</span></p>
+              <p>Рейтинг:<span>8,5</span></p>
             </li>
           <li class="motel-desert-quali-inn">
             <span>
               <img src="img/hotel-2.png" alt="Desert Quali Inn" width="180" height="120">
+            </span>
               <h3>Desert Quali Inn</h3>
               <p class="motel">Мотель</p>
               <p class="hotel-price">От 3000 &#8381;</p>
-            </span>
-            <a type="link" href="#">Подробнее</a>
+            <a href="#" type="link">Подробнее</a>
             <button type="button">В избранное</button>
-            <p>Рейтинг:<span type="ratio">8,9</span></p>
+            <p>Рейтинг:<span>8,9</span></p>
           <li class="apartments-villas-at-poco-diablo">
             <span>
               <img src="img/hotel-3.png" alt="Villas at Poco Diablo" width="180" height="120">
+            </span>
               <h3><b>Villas at Poco Diablo</b></h3>
               <p class="apartments">Апартаменты</p>
               <p class="hotel-price">От 2000 &#8381;</p>
-            </span>
-            <a type="link" href="#">Подробнее</a>
+            <a href="#" type="link">Подробнее</a>
             <button type="button">В избранном</button>
-            <span class="ratio">Рейтинг: 9,2</span>
+            <p>Рейтинг: 9,2</p>
           <li class="hotel-greentree-inn">
             <span>
               <img src="img/hotel-4.png" alt="GreenTree Inn" width="180" height="120">
+            </span>
               <h3>GreenTree Inn</h3>
               <p class="hotel">Гостиница</p>
               <p class="hotel-price">От 3000 &#8381;</p>
             <a type="link" href="#">Подробнее</a>
             <button type="button">В избранное</button>>
-            <span class="ratio">Рейтинг: 9,2</span>
+            <p>Рейтинг: 9,2</p>
           </li>
+        </ul>
         </section>
         <button class="button-pagination-show-more" type="button" name="load-more">Загрузить еще</button>
         <ul class="pagination">
@@ -193,11 +201,11 @@
         </ul>
         <form class="hotels-number">
           <label class="visually-hidden" for="sorting">Гостиниц на странице/label>
-          <select class="select-control" id="hotels-number" name="hotels-number">
+          <select class="select-control" for="hotels-number" id="hotels-number" name="hotels-number">
             <option value="four" selected>4</option>
-            <option value="one" unselected>1</option>
-            <option value="two" unselected>2</option>
-            <option value="three" unselected>3</option>
+            <option value="one" disabled>1</option>
+            <option value="two" disabled>2</option>
+            <option value="three" disabled>3</option>
           </select>
           <button type="menu">
             <span class="visually-hidden">Меню</span>
@@ -214,8 +222,9 @@
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="e-mail-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden">
-              <input class="field" type="email" name="e-mail" placeholder="Ваш e-mail" id="mail-distribution"></input>
-              <button class="button" type="submit" name="subscribe" id="subscribe">Подписаться</button>
+              <input class="field" type="e-mail-form" name="e-mail" placeholder="e-mail" id="mail-distribution">
+                <button class="button" type="submit" name="subscribe" id="subscribe">Подписаться</button>
+            </label>
           </form>
         </section>
         </body>

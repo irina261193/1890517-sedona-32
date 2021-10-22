@@ -10,25 +10,31 @@
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="main-navigation-item">
-            <a class="navigation-link" href="index.html" current>Главная</a>
+            <button>
+              <a class="navigation-link" type="link">Главная</a>
+            </button>
           </li>
           <li class="main-navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <button>
+              <a href="about.html" class="navigation-link" type="link">О Седоне</a>
+            </button>
           </li>
           <li>
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <button>
+              <a href="catalog.html" class="navigation-link" type="link">Гостиницы</a>
+            </button>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="user-navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link">
               <span class="visually-hidden">  
                 Поиск
               </span>
             </a>
           </li>
           <li class="user-navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link">
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -37,12 +43,24 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="main-navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a href="#" class="navigation-link">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
+      <header>
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+        <img class="page-header-logo" alt="Логотип Седоны" src="img/sedona.png" width="138" height="70">
+      </header>
       <h1 class="visually-hiden">Седона</h1>
       <img class="page-header-logo" alt="Логотип Седоны" src="img/sedona.png" width="138" height="70">
       <p>Седона - небольшой городок в Аризоне, заслуживающий большего</p>
@@ -104,7 +122,7 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button>
-          <a class="hotel-search" href="#" type="link">Поиск гостиницы в Седоне</a>
+          <a href="#" class="hotel-search" type="link">Поиск гостиницы в Седоне</a>
         </button>
       </section>
       <section>
@@ -112,8 +130,9 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="e-mail-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden">
-            <input class="field" type="email" name="e-mail" placeholder="Ваш e-mail" id="mail-distribution"></input>
+            <input class="field" type="e-mail-form" name="e-mail" placeholder="e-mail" id="mail-distribution">
             <button class="button" type="submit" name="subscribe" id="subscribe">Подписаться</button>
+        </label>
         </form>
       </section>
     </main>
