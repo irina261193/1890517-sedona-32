@@ -111,9 +111,9 @@
             </li>
           </ul>
         </fieldset>
-        <h2 class="hotel-price">Стоимость,&#8381;</h2>
+        <legend class="hotel-price"></legend>
         <fieldset class="catalog-filter-price-group">
-          <legend class="catalog-filter-title">Цена</legend>
+          <legend class="catalog-filter-title">Стоимость,&#8381;</legend>
           <input class="catalog-filter-input" id="min-price" value="0" type="number" name="min-price">
           <label class="catalog-filter-label" for="min-price">от</label>
           <input class="catalog-filter-input" id="max-price" value="9000" type="number" name="max-price">
@@ -239,16 +239,14 @@
             <option value="six">6</option>
             <option value="eight">8</option>
           </select>
-          <button class="button filter" type="submit">
-            <span class="visually-hidden">Отправить</span>
-          </button>
+          <button class="visually-hidden" type="submit">Отправить</button>
         </form>
       </section>
       <section class="mail-distribution">
         <h2 class="mail-distribution-title">Подпишитесь на рассылку</h2>
         <p class="mail-distribution-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="e-mail" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="mail-distribution"></label>
+          <label class="visually-hidden" for="mail-distribution">E-mail</label>
           <input class="field" type="email" name="e-mail" placeholder="Ваш e-mail" id="mail-distribution">
           <button class="button" type="submit">Подписаться</button>
         </form>
