@@ -1,0 +1,180 @@
+@font-face: {
+    font-family: "PT-Sans";
+    font-style: normal;
+    font-weight: 400;
+    
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    }
+
+    @font-face {
+        font-family: "PT-Sans";
+        font-style: normal;
+        font-weight: 700;
+
+        src: url("fonts/ptsans-700.woff2") format("woff2");
+    }
+
+    body {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+
+    .main-header {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+
+    .navigation-link {
+        font-family: "PT-Sans", sans-serif;
+
+        font-weight: 700px;
+        text-align: left;
+        color: inherit;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .main-index {
+        color: #000000;
+        background-color: #FFFFFF;
+        background-image: url("img/backgrouund.jpg/");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    .promo-title {
+        font-family: "PT-Sans", sans-serif;
+
+        font-weight: 700px;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        background-color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .promo-paragraph {
+        font-family: "PT-Sans", sans-serif;
+
+        font-weight: 400px;
+        font-size: 22px;
+        line-height: 36px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .advantages-list {
+        font-family: "PT-Sans", sans-serif;
+        
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #000000;
+        background-color: #81B3D3;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .description-title {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: white;
+        background-color: #81B3D3;
+        text-decoration: none;
+        text-transform: inherit;
+    }
+
+    .description-text {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: white;
+        background-color: #81B3D3;
+        text-decoration: none;
+        text-transform: inherit;
+    }
+
+    .description-paragraph {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: white;
+        background-color: #81B3D3;
+        text-decoration: none;
+        text-transform: inherit;
+    }
+
+    .mail-distribution-title {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: white;
+        background-color: white;
+        background-image: url(img/background-footer.jpg/);
+    }
+    .mail-distribution-paragraph {
+        font-family: inherit;
+
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: white;
+        background-color: white;
+        background-image: url(img/background-footer.jpg/);
+    }
+
+    .e-mail {
+        color: white;
+    }
+
+    .field {
+        font-family: inherit;
+        
+        font-size: 18px;
+        line-height: inherit;
+        color: black;
+        background-color: white;
+        background-image: url(img/background-footer.jpg);
+    }
+
+    .button {
+        font-family: inherit;
+
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: white;
+        background-color: #81B3D3;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .contacts-phone-link {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
