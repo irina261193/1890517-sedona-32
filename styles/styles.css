@@ -23,6 +23,10 @@
         background-color: #FFFFFF;
     }
 
+    .visually-hidden {
+        display: none;
+    }
+
     .main-header {
         color: #000000;
         background-color: #FFFFFF;
@@ -39,19 +43,23 @@
         text-transform: capitalize;
     }
 
-    .main.promo {
+    .page-header-logo {
+        text-align: center;
+    }
+
+    .promo main {
         color: #000000;
         background-color: #FFFFFF;
         background-image: url("img/index-bg.jpg");
             background-size: 100% auto;
-        background-repeat: no-repeat;
+            background-repeat: no-repeat;
     }
 
      .advantages-list {
         text-align: center;
      }
 
-     .div.advantages {
+     .advantages div {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -59,9 +67,11 @@
          line-height: inherit;
          color: white;
          background-color: #83B3D3;
+         text-decoration: none;
+         text-transform: none;
      }
 
-     .h3.advantages-title {
+     .advantages-title {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 24px;
@@ -74,7 +84,7 @@
          text-transform: uppercase;
      }
 
-     .span.advantages-name {
+     .advantages-name {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -87,7 +97,7 @@
          text-transform: capitalize;
      }
 
-     .p.advantages-paragraph {
+     .advantages-paragraph {
         font-family: "PT-Sans", sans-serif;
 
         font-size: 18px;
@@ -97,7 +107,46 @@
         color: white;
         background-color: inherit;
         text-decoration: none;
-        text-transform: capitalize;
+        text-transform: none;
+     }
+
+     .promo {
+         font-family: "PT-Sans", sans-serif;
+
+         font-size: 22px;
+         font-weight: 400px;
+         line-height: 36px;
+         text-align: center;
+         color: black;
+         background-color: white;
+         text-decoration: none;
+         text-transform: capitalize;
+     }
+
+     .promo-title {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 30px;
+        font-weight: 700px;
+        line-height: 36px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+     }
+
+     .promo-paragraph {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 22px;
+        font-weight: 400px;
+        line-height: 36px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        text-transform: none;
      }
 
      .index-columns {
@@ -113,7 +162,7 @@
         text-transform: none;
      }
 
-     .ul.advantages-description-list {
+     .advantages-description-list {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -126,7 +175,20 @@
          text-transform: none;
      }
 
-     .li.advantages-description-item.living {
+     .advantages-title h3 {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 24px;
+        font-weight: 700px;
+        line-height: 28px;
+        text-align: center;
+        color: white;
+        background-color: #83B3D3;
+        text-decoration: none;
+        text-transform: uppercase;
+     }
+
+     .advantages-description-item.living {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -139,7 +201,7 @@
          text-transform: none;
      }
 
-     .li.advantages-description-title.living {
+     .advantages-description-title.living {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 24px;
@@ -152,7 +214,20 @@
          text-transform: uppercase;
      }
 
-     .li.advantages-description-item.food {
+     .advantages-description-paragraph.living {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-align: inherit;
+        color: inherit;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: none;
+     }
+
+     .advantages-description-item.food {
         font-family: "PT-Sans", sans-serif;
         
         font-size: 18px;
@@ -165,7 +240,7 @@
         text-transform: none;
      }
 
-     .h3.advantages-description-title.food {
+     .advantages-description-title.food {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 24px;
@@ -178,7 +253,7 @@
          text-transform: uppercase;
      }
 
-     .p.advantages-description-paragraph.food {
+     .advantages-description-paragraph.food {
          font-family: "PT-Sans", sans-serif;
 
          font-size: inherit;
@@ -188,10 +263,10 @@
          color: inherit;
          background-color: inherit;
          text-decoration: none;
-         text-transform: capitalize;
+         text-transform: none;
      }
 
-     .li.advantages-description-item.gifts {
+     .advantages-description-item.gifts {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -201,10 +276,10 @@
          color: black;
          background-color: #83B3D31F;
          text-decoration: none;
-         text-transform: capitalize;
+         text-transform: none;
      }
 
-     .h3.advantages-description-title.gifts {
+     .advantages-description-title.gifts {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 24px;
@@ -217,7 +292,7 @@
          text-transform: uppercase;
      }
 
-     .p.advantages-description-paragraph.gifts {
+     .advantages-description-paragraph.gifts {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -227,10 +302,10 @@
          color: inherit;
          background-color: inherit;
          text-decoration: none;
-         text-transform: capitalize;
+         text-transform: none;
      }
 
-     .div.diable-bridge-description {
+     .diable-bridge-description {
         font-family: "PT-Sans", sans-serif;
 
         font-size: 18px;
@@ -243,7 +318,7 @@
         text-transform: capitalize;
      }
 
-     .h3.diable-bridge-title {
+     .diable-bridge-title {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 24px;
@@ -256,7 +331,7 @@
          text-transform: uppercase;
      }
 
-     .p.diable-bridge-paragraph {
+     .diable-bridge-paragraph {
          font-family: "PT-Sans", sans-serif;
 
          font-size: inherit;
@@ -266,10 +341,10 @@
          color: inherit;
          background-color: inherit;
          text-decoration: none;
-         text-transform: capitalize;
+         text-transform: none;
      }
 
-     .li.advantages-list-item small-area {
+     .advantages-list-item small-area {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -279,10 +354,10 @@
          color: black;
          background-color: #83B3D31F;
          text-decoration: none;
-         text-transform: capitalize;
+         text-transform: none;
      }
 
-     .h3.small-area-title {
+     .small-area-title {
          font-family: "PT-Sans", sans-serif;
 
          font-size: 24px;
@@ -295,8 +370,203 @@
          text-transform: uppercase;
      }
 
-     .span.small-area-text {
+     .small-area-text {
          font-family: "PT-Sans", sans-serif;
+
+         font-size: 18px;
+         font-weight: 400px;
+         line-height: 21px;
+         text-align: center;
+         color: black;
+         background-color: inherit;
+         text-decoration: none;
+         text-transform: none;
+     }
+
+     .small-area-paragraph {
+         font-family: "PT-Sans", sans-serif;
+
+         font-size: 18px;
+         font-weight: 400px;
+         line-height: 21px;
+         text-align: center;
+         color: black;
+         background-color: inherit;
+         text-decoration: none;
+         text-transform: none;
+     }
+
+    .advantages-list-item beautiful-road {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 21px;
+        text-align: center;
+        color: black;
+        background-color: #83B3D333;
+        text-decoration: none;
+        text-transform: none;
+    }     
+
+     .beautiful-road-title {
+         font-family: "PT-Sans", sans-serif;
+
+         font-size: 24px;
+         font-weight: 700px;
+         line-height: 28px;
+         text-align: inherit;
+         color: inherit;
+         background-color: #83B3D333;
+         text-decoration: none;
+         text-transform: uppercase;
+     }
+
+     .beautiful-road-text {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 21px;
+        text-align: center;
+        color: black;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .beautiful-road-paragraph {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-align: inherit;
+        color: inherit;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .advantages-list-item.few-tourists {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 21px;
+        text-align: center;
+        color: black;
+        background-color: #83B3D31F;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .few-tourists title {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 24px;
+        font-weight: 700px;
+        line-height: 28px;
+        text-align: center;
+        color: black;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .few-tourists text {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 21px;
+        text-align: inherit;
+        color: black;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .few-tourists paragraph {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 21px;
+        text-align: center;
+        color: black;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: inherit;
+    }
+
+    .search {
+        font-family: "PT-Sans" sans-serif;
+
+        font-size: 22px;
+        font-weight: 400px;
+        line-height: 26px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .visually-hidden {
+        display: none;       
+    }
+
+    .search-title {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .search-paragraph {
+        font-family: "PT-Sans", sans-serif;
+
+        font-size: 22px;
+        font-weight: 400px;
+        line-height: 25px;
+        text-align: center;
+        color: black;
+        background-color: inherit;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+     .mail-distribution {
+         font-family: "PT-Sans", sans-serif;
+
+         font-size: 18px;
+         line-height: 26px;
+         text-align: center;
+         color: black;
+         background-color: #F2F2F2;
+         background-image: url("img/background-footer.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        text-decoration: none;
+        text-transform: none;
+     }
+
+     .e-mail {
+         font-family: "PT-Sans", sans-serif;
+
+         font-size: 18px;
+         line-height: 26px;
+         text-align: center;
+         color: black;
+         background-color: #F2F2F2;
+         text-decoration: none;
+         text-transform: none;
      }
     
     .button {
@@ -311,7 +581,7 @@
         text-transform: uppercase;
     }
 
-    .contacts-phone-link {
+    .contacts-phone {
         font-family: "PT-Sans", sans-serif;
 
         font-size: 40px;
@@ -321,4 +591,27 @@
         background-color: white;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .page-footer {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .page-footer a {
+        color: black;
+    }
+
+    .academy-logo-link {
+        font-size: 14px;
+        color: black;
+    }
+
+    .page-footer-logo {
+        text-align: right;
     }
