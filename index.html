@@ -8,50 +8,52 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="navigation-list">
-        <li class="main-navigation-item">
-          <a class="navigation-link current">Главная</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
-      <a class="page-header-logo">
-        <img class="logo" src="img/sedona-logo.svg" alt="Логотип Седоны" width="138" height="70">
-      </a>
-      <ul class="navigation-list navigation-user">
-        <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">
-            <span class="visually-hidden">
-              Поиск
-            </span>
+  <div class="main-container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li class="main-navigation-item">
+            <a class="navigation-link current">Главная</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <div class="logo-container">
+          <a class="page-header-logo">
+            <img class="logo" src="img/sedona-logo.svg" alt="Логотип Седоны" width="138" height="70">
           </a>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">
-            <span class="visually-hidden">
-              Избранное
-            </span>
-          </a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Хочу сюда!</a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+        <ul class="navigation-list navigation-user">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+  </div>
   </header>
-  <main class="main-index">
+  <main class="main-container main-index">
     <h1 class="visually-hidden">Седона</h1>
     <section class="promo">
       <h2 class="visually-hidden">Главный экран</h2>
-      <section class="welcome">
-        <img src="img/welcome.svg" alt="Седона" width="458" height="352">
-      </section>
+      <img src="img/welcome.svg" alt="Седона" width="458" height="352">
       <h3 class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
       <p class="promo-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
@@ -65,27 +67,31 @@
             <p class="adantages-paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="index-columns">
-              <img class="index-image" src="img/sedona-view.jpg" alt="Седона" width="1200" height="384">
-              <ul class="advantages-description-list">
-                <li class="advantages-descripion-item living">
-                  <h3 class="advantages-description-title living">Жильё</h3>
-                  <p class="advantages-description-paragraph living">Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                  </p>
-                </li>
-                <li class="advantages-description-item food">
-                  <h3 class="advantages-description-title food">Еда</h3>
-                  <p class="advantages-description-paragraph food">Всегда заказывайте топовый фирменный бургер, вы не
-                    разочаруетесь!</p>
-                </li>
-                <li class="advantages-description-item gifts">
-                  <h3 class="advantages-description-title gifts">Сувениры</h3>
-                  <p class="advantages-description-paragraph gifts">Не только китайского, но и настоящего местного производства!</p>
-                </li>
-              </ul>
-            </li>
-          </div>
+            <img class="index-image" src="img/sedona-view.jpg" alt="Седона" width="1200" height="384">
+            <ul class="advantages-description-list">
+              <li class="advantages-descripion-item living">
+                <h3 class="advantages-description-title living">Жильё</h3>
+                <p class="advantages-description-paragraph living">Рекомендуем пожить в настоящем мотеле, всё как в
+                  кино!
+                </p>
+              </li>
+              <li class="advantages-description-item food">
+                <h3 class="advantages-description-title food">Еда</h3>
+                <p class="advantages-description-paragraph food">Всегда заказывайте топовый фирменный бургер, вы не
+                  разочаруетесь!</p>
+              </li>
+              <li class="advantages-description-item gifts">
+                <h3 class="advantages-description-title gifts">Сувениры</h3>
+                <p class="advantages-description-paragraph gifts">Не только китайского, но и настоящего местного
+                  производства!</p>
+              </li>
+            </ul>
+        </li>
+        </div>
         <li class="advantages-list-item diable-bridge">
-          <img class="advantages-image" src="img/diable-bridge.jpg" alt="Мост дьявола" width="1200" height="384">
+          <div>
+            <img class="advantages-image" src="img/diable-bridge.jpg" alt="Мост дьявола" width="1200" height="384">
+          </div>
           <div class="diable-bridge-description">
             <h3 class="diable-bridge-title">Там есть мост дьявола</h3>
             <span class="diable-bridge-description-text">&mdash;№2&mdash;</span>
@@ -151,5 +157,7 @@
       <img class="page-footer-logo" src="img/logo-htmlacademy.svg" alt="Логотип академии" width="115" height="34">
     </a>
   </footer>
+  </div>
 </body>
+
 </html>

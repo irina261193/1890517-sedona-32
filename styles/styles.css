@@ -1,35 +1,82 @@
 @font-face: {
     font-family: "PT-Sans";
     font-style: normal;
-    font-weight: 400;
-    
+    font-weight: 400;    
     src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
     }
 
     @font-face {
         font-family: "PT-Sans";
         font-style: normal;
         font-weight: 700;
-
         src: url("fonts/ptsans-700.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    html {
+        height: 100%;
     }
 
     body {
+        margin: 0;
+        padding: 0;
+        display: flex;
         font-family: "PT-Sans", sans-serif;
 
         font-size: 18px;
         line-height: 21px;
+        font-weight: 400px;
         color: #000000;
         background-color: #FFFFFF;
+        text-transform: none;
     }
 
     .visually-hidden {
         display: none;
     }
 
-    .main-header {
-        color: #000000;
+    a {
+        text-decoration: none;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-container {
+        width: 1200px;
+        height: 600px;
+        background-color: white;
+        position: relative;
+    }
+
+    .main-header,
+    .page-footer,
+    .page-container {
         background-color: #FFFFFF;
+        position: relative;
+    }
+
+    .main-navigation {
+        position: relative;
+    }
+
+    .main-navigation a {
+        font-weight: 80px;
+        color: black;
+    }
+
+    .navigation-list {
+        width: 1200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation-user {
+        max-width: 300px;
+        margin-left: auto;
     }
 
     .navigation-link {
@@ -43,6 +90,9 @@
         text-transform: capitalize;
     }
 
+    .main-container {
+        flex-grow: 1;
+    }
 
     .main-index {
         color: black;
@@ -74,8 +124,27 @@
           background-image: url("img/catalog-background.jpg");
       }
 
+      .page-container {
+          width: 1280px;
+          margin: 0 auto;
+      }
+
+      .logo {
+        position: absolute;
+        display: block;
+        width: 140px;
+        height: 70px;
+        top: 0;
+        bottom: 0;
+        margin: 0 auto;
+        padding: 530px;
+      }
+
      .advantages-list {
+        margin: 0;
+        padding: 0;
         text-align: center;
+        background-color: white;
      }
 
      .advantages div {
@@ -135,9 +204,12 @@
          font-size: 22px;
          font-weight: 400px;
          line-height: 36px;
+         display: flex;
+         justify-content: center;
          text-align: center;
          color: black;
          background-color: white;
+         background-image: url(img/index.bg.jpg/);
          text-decoration: none;
          text-transform: capitalize;
      }
@@ -173,12 +245,35 @@
 
         font-size: 18px;
         font-weight: 400px;
-        line-height: 21px;
+        line-height: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
         text-align: center;
         color: #000000;
         background-color: #83B3D31F;
         text-decoration: none;
         text-transform: none;
+     }
+
+     .advantages-list-item {
+         width: 400px;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .advantages {
+         width: 1200px;
+         height: 385px;
+         left: 55px;
+         top: 835px;
+         margin-top: 765px;
+         margin-left: 15;
+         margin-right: 55;
+         display: flex;
+         justify-content: space-between;
+         position: absolute;
      }
 
      .advantages-description-list {
@@ -322,6 +417,12 @@
          background-color: inherit;
          text-decoration: none;
          text-transform: none;
+     }
+
+     .advantages-list-item diable-bridge {
+         display: flex;
+         justify-content: space-between;
+         margin-left: 0%;
      }
 
      .diable-bridge-description {
