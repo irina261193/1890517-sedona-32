@@ -22,6 +22,8 @@
         margin: 0;
         padding: 0;
         display: flex;
+        flex-direction: column;
+        min-height: 100%;
         font-family: "PT-Sans", sans-serif;
 
         font-size: 18px;
@@ -55,23 +57,27 @@
     .main-header,
     .page-footer,
     .page-container {
+        flex-grow: 1;
         background-color: #FFFFFF;
         position: relative;
     }
 
     .main-navigation {
+        display: flex;
+        width: 1200px;
+        height: 70px;
         position: relative;
+        margin: 0 auto;
+    }
+
+    .navigation-list {
+        margin: 0px;
+        padding: 0px;
     }
 
     .main-navigation a {
         font-weight: 80px;
         color: black;
-    }
-
-    .navigation-list {
-        width: 1200px;
-        margin: 0;
-        padding: 0;
     }
 
     .navigation-user {
@@ -107,7 +113,7 @@
           background-position: 50%;
           background-color: white;
           padding-top: 76px;
-          background-image: url(.../img/index-bg.jpg);
+          background-image: url(../img/index-bg.jpg);
           background-position: 50% -55px;
           background-repeat: no-repeat;
           padding-bottom: 79px;
@@ -121,7 +127,7 @@
       .main-inner {
           color: black;
           background-color: #F2F2F2;
-          background-image: url("img/catalog-background.jpg");
+          background-image: url(../img/catalog-background.jpg);
       }
 
       .page-container {
@@ -140,107 +146,7 @@
         padding: 530px;
       }
 
-     .advantages-list {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        background-color: white;
-     }
-
-     .advantages div {
-         font-family: "PT-Sans", sans-serif;
-
-         font-size: 18px;
-         font-weight: 400px;
-         line-height: inherit;
-         color: white;
-         background-color: #83B3D3;
-         text-decoration: none;
-         text-transform: none;
-     }
-
-     .advantages-title {
-         font-family: "PT-Sans", sans-serif;
-
-         font-size: 24px;
-         font-weight: 700px;
-         line-height: 28px;
-         text-align: center;
-         color: #FFFFFF;
-         background-color: inherit;
-         text-decoration: none;
-         text-transform: uppercase;
-     }
-
-     .advantages-name {
-         font-family: "PT-Sans", sans-serif;
-
-         font-size: 18px;
-         font-weight: 400px;
-         line-height: 21px;
-         text-align: center;
-         color: #FFFFFF;
-         background-color: inherit;
-         text-decoration: none;
-         text-transform: capitalize;
-     }
-
-     .advantages-paragraph {
-        font-family: "PT-Sans", sans-serif;
-
-        font-size: 18px;
-        font-weight: 400px;
-        line-height: 21px;
-        text-align: center;
-        color: white;
-        background-color: inherit;
-        text-decoration: none;
-        text-transform: none;
-     }
-
-     .promo {
-         font-family: "PT-Sans", sans-serif;
-
-         font-size: 22px;
-         font-weight: 400px;
-         line-height: 36px;
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         color: black;
-         background-color: white;
-         background-image: url(img/index.bg.jpg/);
-         text-decoration: none;
-         text-transform: capitalize;
-     }
-
-     .promo-title {
-        font-family: "PT-Sans", sans-serif;
-
-        font-size: 30px;
-        font-weight: 700px;
-        line-height: 36px;
-        text-align: center;
-        color: #FFFFFF;
-        background-color: inherit;
-        text-decoration: none;
-        text-transform: uppercase;
-     }
-
-     .promo-paragraph {
-        font-family: "PT-Sans", sans-serif;
-
-        font-size: 22px;
-        font-weight: 400px;
-        line-height: 36px;
-        text-align: center;
-        color: black;
-        background-color: white;
-        text-decoration: none;
-        text-transform: none;
-     }
-
-     .index-columns {
+     .advantages-description-list {
         font-family: "PT-Sans", sans-serif;
 
         font-size: 18px;
@@ -252,9 +158,6 @@
         padding: 0;
         text-align: center;
         color: #000000;
-        background-color: #83B3D31F;
-        text-decoration: none;
-        text-transform: none;
      }
 
      .advantages-list-item {
@@ -263,20 +166,15 @@
          justify-content: space-between;
      }
 
-     .advantages {
-         width: 1200px;
-         height: 385px;
-         left: 55px;
-         top: 835px;
-         margin-top: 765px;
-         margin-left: 15;
-         margin-right: 55;
+     .index-columns {
          display: flex;
          justify-content: space-between;
-         position: absolute;
+         padding: 0px;
      }
 
      .advantages-description-list {
+         width: 400px;
+
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -663,6 +561,9 @@
     }
 
      .mail-distribution {
+         width: 800px;
+         height: 400px;
+
          font-family: "PT-Sans", sans-serif;
 
          font-size: 18px;
@@ -671,7 +572,7 @@
          text-align: center;
          color: black;
          background-color: #F2F2F2;
-         background-image: url("img/background-footer.jpg");
+         background-image: url(../img/background-footer.jpg);
             background-size: 100% auto;
             background-repeat: no-repeat;
         text-decoration: none;
@@ -718,6 +619,8 @@
     }
 
     .page-footer {
+
+        position: sticky;
         font-size: 40px;
         line-height: 40px;
         text-align: center;
@@ -725,6 +628,12 @@
         background-color: white;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .footer-container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
     }
 
     .page-footer a {
@@ -738,6 +647,12 @@
 
     .page-footer-logo {
         text-align: right;
+    }
+
+    .catalog-header {
+        width: 1200px;
+        height: 410px;
+        background-image: url(..img/catalog-background.jpg/);
     }
 
     .inner-header-title {
@@ -770,8 +685,9 @@
         text-transform: none;
     }
 
-    .sorting-container {
-        background-image: url(img/catalog-background.jpg);
+    .hotel-card {
+        width: 1200px;
+        height: 410px;
     }
 
     .button.submit {
@@ -793,10 +709,6 @@
         background-color: white;
         text-decoration: none;
         text-transform: uppercase;
-    }
-
-    .hotel-card {
-        background-color: white;
     }
 
     .hotel-card-title {

@@ -22,11 +22,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="logo-container">
-          <a class="page-header-logo">
-            <img class="logo" src="img/sedona-logo.svg" alt="Логотип Седоны" width="138" height="70">
-          </a>
-        </div>
+        <img class="logo" src="img/sedona-logo.svg" alt="Логотип Седоны" width="138" height="70">
         <ul class="navigation-list navigation-user">
           <li class="user-navigation-item">
             <a class="user-navigation-link" href="#">
@@ -47,15 +43,17 @@
           </li>
         </ul>
       </nav>
+    </header>
   </div>
-  </header>
   <main class="main-container main-index">
     <h1 class="visually-hidden">Седона</h1>
     <section class="promo">
       <h2 class="visually-hidden">Главный экран</h2>
-      <img src="img/welcome.svg" alt="Седона" width="458" height="352">
-      <h3 class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-      <p class="promo-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="welcome">
+        <img src="img/welcome.svg" alt="Седона" width="458" height="352">
+        <h3 class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p class="promo-paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -66,8 +64,9 @@
             <span class="advantages-name">&mdash;№1&mdash;</span>
             <p class="adantages-paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="index-columns">
-            <img class="index-image" src="img/sedona-view.jpg" alt="Седона" width="1200" height="384">
+          <div class="index-image-container">
+            <img class="index-image" src="img/sedona-view.jpg" alt="Седона" width="800" height="385">
+          </div>
             <ul class="advantages-description-list">
               <li class="advantages-descripion-item living">
                 <h3 class="advantages-description-title living">Жильё</h3>
@@ -87,10 +86,9 @@
               </li>
             </ul>
         </li>
-        </div>
         <li class="advantages-list-item diable-bridge">
-          <div>
-            <img class="advantages-image" src="img/diable-bridge.jpg" alt="Мост дьявола" width="1200" height="384">
+          <div class="advantages-image-container">
+            <img class="advantages-image" src="img/diable-bridge.jpg" alt="Мост дьявола" width="800" height="385">
           </div>
           <div class="diable-bridge-description">
             <h3 class="diable-bridge-title">Там есть мост дьявола</h3>
@@ -133,31 +131,31 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="social-list">
-      <li class="footer-social-item twitter">
-        <a class="visually-hidden footer-social-link twitter" href="https://www.twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">Твиттер</span>
-        </a>
-      </li>
-      <li class="footer-social-item facebook">
-        <a class="visually-hidden footer-social-link facebook" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Фейсбук</span>
-        </a>
-      </li>
-      <li class="footer-social-item youtube">
-        <a class="visually-hidden footer-social-link youtube" href="https://www.youtube.com/HTMLAcademyRUS">
-          <span class="visually-hidden">YouTube</span>
-        </a>
-      </li>
-    </ul>
-    <p class="contacts-phone">
-      <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </p>
-    <a class="academy-logo-link">
-      <img class="page-footer-logo" src="img/logo-htmlacademy.svg" alt="Логотип академии" width="115" height="34">
-    </a>
+    <div class="footer-container">
+      <ul class="social-list">
+        <li class="footer-social-item twitter">
+          <a class="visually-hidden footer-social-link twitter" href="https://www.twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="footer-social-item facebook">
+          <a class="visually-hidden footer-social-link facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="footer-social-item youtube">
+          <a class="visually-hidden footer-social-link youtube" href="https://www.youtube.com/HTMLAcademyRUS">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <p class="contacts-phone">
+        <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <a class="academy-logo-link">
+        <img class="page-footer-logo" src="img/logo-htmlacademy.svg" alt="Логотип академии" width="115" height="34">
+      </a>
+    </div>
   </footer>
-  </div>
 </body>
-
 </html>
